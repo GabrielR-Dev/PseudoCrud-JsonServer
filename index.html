@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Crud</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1>Pseudo-Crud</h1>
+        <p>GabrielR-Dev</p>
+    </header>
+    <main class="content">
+        <form class="inputs">
+            <input name="nombre" type="text" placeholder="Name" pattern="^[A-Za-zÑñÁáÉeÍíÓó\s]+$" required>
+            <input name="apellido" type="text" placeholder="Apellido" pattern="^[A-Za-zÑñÁáÉeÍíÓó\s]+$" required>
+            <input name="dni" type="text" placeholder="DNI" pattern="^[0-9]+$" required>
+            <input name="enviar" type="submit">
+            <input name="id" type="hidden">
+        </form>
+        <section class="info">
+            <table class="tabla">
+                <thead>
+                    <th class="nombre">Nombre</th>
+                    <th class="apellido">Apellido</th>
+                    <th class="dni">DNI</th>
+                    <th class="dni">Acciones</th>
+                    
+                </thead>
+                <tbody>
+                    <!-- Templates -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <template id="datos_template">
+        <tr>
+            <!-- <td class="id"></td> -->
+            <td class="tnombre"></td>
+            <td class="tapellido"></td>
+            <td class="tdni"></td>
+            <td>
+                <button class="editar">Editar</button>
+                <button class="borrar">Borrar</button>
+            </td>
+        </tr>
+    </template>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

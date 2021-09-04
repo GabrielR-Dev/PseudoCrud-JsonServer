@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url("../img/img.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    background-color: rgba(255, 102, 102, 0.4);
+    h1{
+        font-weight:lighter;
+        margin-left: 200px;
+        padding-top: 30px;
+    }
+    p{
+        font-weight:lighter;
+        margin-left: 200px;
+        padding-top: 10px;
+    }
+}
+
+.content{
+    display: flex;
+    width: 90%;
+    min-height: 80vh;
+    margin: auto;
+    margin-top: 3rem;
+    .inputs{
+        width: 40%;
+        height: 100%;
+        input{
+            border-radius: 5px;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            width: 80%;
+            height: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+    .info{
+        border-radius: 10px;
+        width: 60%;
+        height: 100%;
+        .tabla{
+            border: 1px solid black;
+            width: 100%;
+            height: inherit;
+            border-collapse: collapse;
+            
+            thead{
+                width: 100%;
+                height: 80px;
+                th{
+                    border: 1px solid black;
+                    background-color: rgba(255, 102, 102,0.5);
+                    font-size: 1.2rem;
+                }
+            }
+            tbody{
+                width: 100%;
+                height: 40px;
+                tr{
+                    margin-top: 5px;
+                    td{
+                        border: 1px solid black;
+                        text-align: center;
+                        font-size: 1.2rem;
+                        background-color: rgba(247, 247, 247,0.8);
+
+                        
+                        button{
+                            width: 50%;
+                            height: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 950px){
+    .content{ 
+        display: block;
+
+        .inputs{
+            width: 100%;
+        }
+        .info{
+            width: 100%;
+        }
+    }
+}
